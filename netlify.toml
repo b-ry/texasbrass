@@ -1,0 +1,3 @@
+[build]
+  command = "npx turbo run build-storybook --filter=@carolbrasstexas/ui"
+  publish = "packages/ui/storybook-static"
