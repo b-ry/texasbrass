@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+dist
+build
+.turbo
+storybook-static
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store

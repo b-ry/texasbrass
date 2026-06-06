@@ -1,0 +1,21 @@
+{
+  "name": "carolbrasstexas",
+  "private": true,
+  "packageManager": "npm@11.6.1",
+  "workspaces": [
+    "apps/web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "web": "turbo run dev --filter=web",
+    "cms": "turbo run dev --filter=cms",
+    "storybook": "turbo run storybook --filter=@carolbrasstexas/ui",
+    "lint": "turbo run lint",
+    "setup": "node scripts/setup.js"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  }
+}

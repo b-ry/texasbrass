@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem; /* restore body to 16px */
+}
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+
+
+  /* Font weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fww-500: 500;
+  --fw-bold: 700;
+
+  /* letter spacing */
+  --ls-sm: 2px;
+  --ls-lg: 0.15rem;
+
+  /* line height */
+  --lh-small: 1.15;
+  --lh-normal: 1.5;
+  --lh-large: 1.75;
+
+  --gold: #f2e2b1;
+  --gold-hover: #e8d498;
+  --gold-dark: #7a5e1a;
+  --gold-mid: #c9a84c;
+  --gold-social: #8a8070;
+  --gold-muted: rgba(196, 160, 72, 0.12);
+  --gray-900: #1c1a17;
+  --gray-800: #2e2b26;
+  --gray-750: #f7f4ef;
+  --gray-700: #ede9e1;
+  --gray-600: #d4cfc6;
+  --muted-black: #3a3428;
+  --text-primary: #1c1a17;
+  --text-secondary: #4a4540;
+  --text-muted: #6b6560;
+  --white: #faf8f4;
+
+  --aspect-card: 19 / 26;
+  --aspect-43: 4 / 3;
+}
+

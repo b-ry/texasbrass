@@ -1,0 +1,20 @@
+{
+  "name": "@carolbrasstexas/ui",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "storybook": "storybook dev -p 6006 --no-open",
+    "build-storybook": "storybook build",
+    "lint": "eslint src/"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "storybook": "^8.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@carolbrasstexas/tailwind-config": "*"
+  }
+}
