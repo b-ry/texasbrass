@@ -1,3 +1,6 @@
 [build]
   command = "npx turbo run build-storybook --filter=@carolbrasstexas/ui"
   publish = "packages/ui/storybook-static"
+
+[build.environment]
+  NODE_VERSION = "20"
