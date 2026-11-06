@@ -1,7 +1,6 @@
 import React from 'react';
 
 export interface StatProps {
-  onClick?: () => void;
   stat?: string
   title?: string;
 }
@@ -9,14 +8,14 @@ export interface StatProps {
 export const Stat = ({ stat, title
 }: StatProps) => {
   return (
-    <article
+    <figure aria-label={title}
       className={[
-        'flex flex-col gap-[.6rem] border-s-[.2rem] border-(--gray-800) ps-[2.1rem]'
+        'flex flex-col gap-[0.375rem] border-s-[0.125rem] border-(--gray-800) ps-[1.3125rem]'
       ].join(' ')}
       
     >
-      <span className='text-[5.1rem] text-(--gray-900) font-serif leading-none'>{stat}</span>
-      <p className='text-[1.3rem] font-sans text-(--gray-900) uppercase tracking-[.17rem] font-semibold'>{title}</p>
-    </article>
+      <div className='text-[3.1875rem] text-(--gray-900) font-serif leading-none'>{stat}</div>
+      <figcaption className='text-[0.8125rem] font-sans text-(--gray-900) uppercase tracking-[0.10625rem] font-semibold'>{title}</figcaption>
+    </figure>
   );
 };

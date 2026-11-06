@@ -19,16 +19,16 @@ const defaultButtonVariant: Record<NonNullable<TextBlockProps['variant']>, Butto
 
 const variantClasses = {
   dark_background: {
-    article: 'bg-(--gray-900) p-[4.8rem]',
-    label: 'font-sans font-semibold uppercase tracking-[.3rem] text-[1.3rem] text-(--gold)',
-    title: 'font-serif font-normal text-[3.8rem] md:text-[4.6rem] lg:text-[5.7rem] leading-(--lh-small) text-(--white)',
-    body: 'font-sans font-normal text-[1.6rem] leading-(--lh-normal) md:leading-(--lh-large) text-(--gray-700)',
+    article: 'bg-(--gray-900) p-[3rem]',
+    label: 'font-sans font-semibold uppercase tracking-[0.1875rem] text-[0.8125rem] text-(--gold)',
+    title: 'font-serif font-normal text-[2.375rem] md:text-[2.875rem] lg:text-[3.5625rem] leading-(--lh-small) text-(--white)',
+    body: 'font-sans font-normal text-[1rem] leading-(--lh-normal) md:leading-(--lh-large) text-(--gray-700)',
   },
   light_background: {
-    article: 'bg-(--gray-750) p-[2.4rem]',
-    label: 'font-sans font-semibold uppercase tracking-[.3rem] text-[1.3rem] text-(--gold-dark)',
-    title: 'font-serif font-normal text-[3.8rem] md:text-[4.6rem] lg:text-[5.7rem] leading-(--lh-small) text-(--gray-900)',
-    body: 'font-serif font-normal text-[1.8rem] md:text-[2rem] lg:text-[2.3rem] leading-(--lh-normal) md:leading-(--lh-large) text-(--gray-900)',
+    article: 'bg-(--gray-750) p-[3rem]',
+    label: 'font-sans font-semibold uppercase tracking-[0.1875rem] text-[0.8125rem] text-(--gold-dark)',
+    title: 'font-serif font-normal text-[2.375rem] md:text-[2.875rem] lg:text-[3.5625rem] leading-(--lh-small) text-(--gray-900)',
+    body: 'font-serif font-normal text-[1.125rem] md:text-[1.25rem] lg:text-[1.4375rem] leading-(--lh-normal) md:leading-(--lh-large) text-(--gray-900)',
   },
 };
 
@@ -37,11 +37,11 @@ export const TextBlock = ({ variant = 'light_background', label, title, body, bu
   const classes = variantClasses[variant];
   return (
     <article
-      className={['flex flex-col gap-[2rem]', classes.article].join(' ')}
+      className={['flex flex-col gap-[1.25rem]', classes.article].join(' ')}
     >
       {label && <p className={classes.label}>{label}</p>}
       {title && <h2 className={classes.title}>{title}</h2>}
-      <span className='inline-flex w-[6.4rem] h-[.1rem] bg-(--gold-mid)' aria-hidden="true"></span>
+      <span className='inline-flex w-[4rem] h-[0.0625rem] bg-(--gold-mid)' aria-hidden="true"></span>
       {body && <p className={classes.body}>{body}</p>}
       {button && <Button label={button} variant={buttonVariant ?? defaultButtonVariant[variant]} size={buttonSize} onClick={onClick} />}
     </article>

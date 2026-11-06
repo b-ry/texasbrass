@@ -25,6 +25,6 @@ export const Default: Story = {
   args: {
     icon: 'instagram',
     title: 'Follow us on Instagram',
-    link: 'https://instagram.com',
+    href: 'https://instagram.com',
   },
 };

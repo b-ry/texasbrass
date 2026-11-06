@@ -24,6 +24,7 @@ export const Primary: Story = {
   args: {
     variant: 'primary',
     label: 'Button',
+    'aria-label': 'Learn more about the Carol Brass BMAC Bb Trumpet',
   },
 };
 
@@ -31,6 +32,7 @@ export const Secondary: Story = {
   args: {
     variant: 'secondary',
     label: 'Button',
+    'aria-label': 'Learn more about the Carol Brass BMAC Bb Trumpet',
   },
 };
 
@@ -38,6 +40,7 @@ export const Tertiary: Story = {
   args: {
     variant: 'tertiary',
     label: 'Button',
+    'aria-label': 'Learn more about the Carol Brass BMAC Bb Trumpet',
   },
 }
 
@@ -45,6 +48,7 @@ export const Large: Story = {
   args: {
     size: 'large',
     label: 'Button',
+    'aria-label': 'Learn more about the Carol Brass BMAC Bb Trumpet',
   },
 };
 
@@ -52,5 +56,6 @@ export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button',
+    'aria-label': 'Learn more about the Carol Brass BMAC Bb Trumpet',
   },
 };

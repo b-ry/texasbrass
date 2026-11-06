@@ -32,5 +32,10 @@ export const DarkBg: Story = {
 export const LightBg: Story = {
   args: {
     variant: 'light_background',
+    label: 'Tailored to you',
+    title: 'Custom Orders & BMAC Moduel',
+    body: 'Can\'t find exactly what you\'re looking for? We\'ll build it. Specify bell material, bore size, valve type, lacquer finish, and more — resulting in a truly personal instrument. The BMAC model is our flagship custom offering, built to spec for discerning players.',
+    button: 'Start Your Custom Order',
+    buttonSize: 'large',
   },
 };

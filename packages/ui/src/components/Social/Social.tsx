@@ -9,7 +9,7 @@ const icons: Record<SocialIcon, React.ReactNode> = {
     </svg>
   ),
   instagram: (
-   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
               <rect x="2" y="2" width="20" height="20" rx="5"></rect>
               <circle cx="12" cy="12" r="4"></circle>
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle>
@@ -26,14 +26,14 @@ const icons: Record<SocialIcon, React.ReactNode> = {
 export interface SocialProps  {
   icon: SocialIcon;
   title: string;
-  link: string;
+  href: string;
   onClick?: () => void;
 }
 
-export const Social = ({ icon, title, link, onClick }: SocialProps) => (
-  <a href={link} aria-label={title} onClick={onClick}
-    className="w-[4.4rem] h-[4.4rem] flex items-center justify-center text-(--gold-social) border border-(--muted-black) hover:text-(--gold) transition-colors duration-200 hover:border-(--gold)"
+export const Social = ({ icon, title, href, onClick }: SocialProps) => (
+  <a href={href} aria-label={title} onClick={onClick}
+    className="w-[2.75rem] h-[2.75rem] flex items-center justify-center text-(--gold-social) border border-(--text-muted) hover:text-(--gold) transition-colors duration-200 hover:border-(--gold)"
   >
-    <span className="w-[2rem] h-[2rem] flex items-center justify-center">{icons[icon]}</span>
+    <span className="w-[1.25rem] h-[1.25rem] flex items-center justify-center">{icons[icon]}</span>
   </a>
 );

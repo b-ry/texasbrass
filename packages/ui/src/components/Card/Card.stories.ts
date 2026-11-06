@@ -20,7 +20,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    image: 'https://placehold.co/380x520',
+    image: 'https://carolbrassoftexas.netlify.app/images/bmac-silver.jpg',
     alt: 'Picture',
     brow: 'Signature Series',
     title: 'Carol BrassCTR-5000 Bb Trumpet',

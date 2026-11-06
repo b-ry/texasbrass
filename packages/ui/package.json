@@ -9,12 +9,16 @@
     "lint": "eslint src/"
   },
   "devDependencies": {
+    "@carolbrasstexas/tailwind-config": "*",
     "@storybook/addon-essentials": "^8.0.0",
     "@storybook/react": "^8.0.0",
     "@storybook/react-vite": "^8.0.0",
-    "storybook": "^8.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "@carolbrasstexas/tailwind-config": "*"
+    "storybook": "^8.0.0"
+  },
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4"
   }
 }
