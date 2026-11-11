@@ -41,7 +41,7 @@ export const Card = ({ image, alt = '', title, price, brow, link, onClick, showA
         <p className='inline-block font-sans font-semibold uppercase tracking-[0.125rem] text-[0.75rem] sm:text-[0.875rem] sm:text-sm text-(--gold)'>{brow}</p>
         <h3 className='font-serif font-semibold text-[1.5rem] sm:text-[1.625rem] leading-(--lh-small) text-(--white)'>{title}</h3>
         {price !== undefined && (
-          <p className='font-sans font-normal text-[0.875rem] sm:text-[1rem] text-(--gold)'>{formatPrice(price)}</p>
+          <p className='font-sans font-normal text-[0.875rem] sm:text-[1rem] text-(--gold)'>${formatPrice(price)}</p>
         )}
       </div>
       {showArrow && (

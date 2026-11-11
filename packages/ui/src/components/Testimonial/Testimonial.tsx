@@ -74,7 +74,7 @@ export const Testimonial = ({ label, title, titleAccent, testimonials }: Testimo
               pagination: false,
               drag: true,
               keyboard: 'focused',
-              autoplay: !reducedMotion,
+              autoplay: false,
               interval: AUTOPLAY_INTERVAL,
               pauseOnHover: true,
               pauseOnFocus: true,

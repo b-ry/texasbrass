@@ -29,7 +29,7 @@ export const Button = ({
     <button
       type="button"
       className={[
-        'inline-block w-fit cursor-pointer font-bold font-sans leading-(--lh-normal) transition-all duration-250 uppercase border-2 px-6 py-3',
+        'inline-block w-fit cursor-pointer font-bold font-sans leading-(--lh-normal) transition-all duration-250 uppercase border-2 px-6 py-3 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0 disabled:hover:shadow-none',
         variantClasses[variant],
         sizeClasses[size],
       ].join(' ')}

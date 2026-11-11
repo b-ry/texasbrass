@@ -14,8 +14,11 @@
   --fw-bold: 700;
 
   /* letter spacing */
+  --ls--1: -2.4px;
   --ls-sm: 2px;
   --ls-lg: 0.09375rem;
+  --ls-xlg: 4.05px;
+
 
   /* line height */
   --lh-small: 1.15;
@@ -38,6 +41,9 @@
   --text-secondary: #4a4540;
   --text-muted: #6b6560;
   --white: #faf8f4;
+
+  /* Form validation — a warm rust rather than a stock red, to stay in the brand's warm/neutral palette. */
+  --error-dark: #a13d2f;
 
   --aspect-card: 19 / 26;
   --aspect-43: 4 / 3;

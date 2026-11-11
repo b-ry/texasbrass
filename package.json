@@ -16,6 +16,6 @@
     "setup": "node scripts/setup.js"
   },
   "devDependencies": {
-    "turbo": "latest"
+    "turbo": "^2.11.10"
   }
 }
